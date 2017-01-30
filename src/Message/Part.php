@@ -326,6 +326,21 @@ class Part implements \RecursiveIterator
         );
     }
 
+
+    public function getMime($keepUnseen = false) {
+      return $this->doGetMime($keepUnseen);
+    }
+
+    private function doGetMime($keepUnseen = false) {
+
+      return imap_fetchmime(
+        $this->stream,
+        $this->messageNumber,
+        $this->partNumber ?: 1,
+        \FT_UID | ($keepUnseen ? \FT_PEEK : null)
+      );
+    }
+
     private function isAttachment($part)
     {
         // Attachment with correct Content-Disposition header
