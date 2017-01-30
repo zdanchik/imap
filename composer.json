@@ -1,16 +1,16 @@
 {
-    "name": "ddeboer/imap",
+    "name": "zdanchik/imap",
     "description": "Object-oriented IMAP for PHP",
     "keywords": [ "email", "mail", "imap" ],
     "license": "MIT",
     "authors": [
         {
-            "name": "David de Boer",
-            "email": "david@ddeboer.nl"
+            "name": "Zdanchik",
+            "email": "zdanchik@gmail.com"
         },
         {
             "name": "Community contributors",
-            "homepage": "https://github.com/ddeboer/imap/graphs/contributors"
+            "homepage": "https://github.com/zdanchik/imap/graphs/contributors"
         }   
     ],
     "require": {
